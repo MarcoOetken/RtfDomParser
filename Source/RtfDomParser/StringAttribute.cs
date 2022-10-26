@@ -19,48 +19,20 @@ namespace RtfDomParser
     public class StringAttribute
     {
         /// <summary>
-        /// initialize instance
-        /// </summary>
-        public StringAttribute()
-        {
-        }
-
-        private string strName = null;
-        /// <summary>
         /// name
         /// </summary>
         [System.ComponentModel.DefaultValue( null )]
-        public string Name
-        {
-            get
-            {
-                return strName; 
-            }
-            set 
-            {
-                strName = value; 
-            }
-        }
+        public string Name { get; set; }
 
-        private string strValue = null;
         /// <summary>
         /// value
         /// </summary>
         [System.ComponentModel.DefaultValue( null)]
-        public string Value
-        {
-            get
-            {
-                return strValue; 
-            }
-            set
-            {
-                strValue = value; 
-            }
-        }
+        public string Value { get; set; }
+
         public override string ToString()
         {
-            return strName + "=" + strValue;
+            return Name + "=" + Value;
         }
     }
 
