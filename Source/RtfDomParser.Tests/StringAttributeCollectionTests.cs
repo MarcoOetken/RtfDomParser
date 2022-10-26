@@ -40,16 +40,6 @@ namespace RtfDomParser.Tests
             Assert.That(sut["Name"], Is.EqualTo("Value"));
             Assert.That(sut.Count, Is.EqualTo(1));
         }
-
-        [Test]
-        public void AddElemTwiceCountStays1()
-        {
-            var sut = new StringAttributeCollection();
-            sut.Add(new StringAttribute() { Name = "name", Value = "Value" });
-            sut.Add(new StringAttribute() { Name = "name", Value = "Value" });
-            Assert.That(sut["name"], Is.EqualTo("Value"));
-            Assert.That(sut.Count, Is.EqualTo(1));
-        }
     }
 }
 

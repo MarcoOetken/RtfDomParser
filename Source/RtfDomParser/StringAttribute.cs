@@ -68,10 +68,7 @@ namespace RtfDomParser
     [System.Diagnostics.DebuggerTypeProxy(typeof(RTFInstanceDebugView))]
     public class StringAttributeCollection : System.Collections.CollectionBase
     {
-        public StringAttributeCollection()
-        {
-        }
-
+        // 221026 ## MO: Removed Add and Remove - use this[] instead.
         public string this[string name]
         {
             get
@@ -106,16 +103,6 @@ namespace RtfDomParser
                     this.List.Add(newItem);
                 }
             }
-        }
-
-        public int Add(StringAttribute item)
-        {
-            return this.List.Add(item);
-        }
-
-        public void Remove(StringAttribute item)
-        {
-            this.List.Remove(item);
         }
     }
 }
