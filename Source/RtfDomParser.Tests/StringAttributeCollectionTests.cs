@@ -8,7 +8,6 @@
 
 namespace RtfDomParser.Tests
 {
-    using System;
     using NUnit.Framework;
     using RtfDomParser;
 

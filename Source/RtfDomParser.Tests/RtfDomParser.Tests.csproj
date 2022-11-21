@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringAttributeCollectionTests.cs" />
+    <Compile Include="LexerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RtfDomParser\RtfDomParser.csproj">
